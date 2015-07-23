@@ -1,18 +1,19 @@
 #!/usr/bin/env ruby
+require 'task'
 
 class TodoList
-attr_accessor :tasks
 
-def inititialize
-  self.tasks = []
+	attr_accessor :tasks
+
+	def initialize
+       self.tasks = []
+	end
+
+	def add(task)
+       self.tasks << task
+    end
+
 end
-
-def add(task)
-  self.tasks << task
-end
-
- 
-
 
 if __FILE__ == $0
 
